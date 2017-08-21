@@ -6,7 +6,6 @@
 /*
  * Asiento.java
  *
- * Created on 19-ago-2010, 19:55:51
  */
 package componentes;
 
@@ -44,7 +43,13 @@ public class Asiento extends javax.swing.JPanel {
         mano.add(c);
         panelMano.add(c);
         panelMano.validate();
+        panelMano.repaint();
+        panelMano.validate();
+        this.repaint();
         this.validate();
+        this.repaint();
+        panelMano.repaint();
+        panelMano.validate();
     }
     public void anadeCarta(Carta c){
         anadeCarta(c.getNumero(),c.getPalo());

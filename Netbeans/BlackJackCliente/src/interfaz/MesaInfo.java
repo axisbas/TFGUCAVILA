@@ -6,7 +6,6 @@
 /*
  * infoMesa.java
  *
- * Created on 27-ago-2010, 19:14:26
  */
 
 package interfaz;

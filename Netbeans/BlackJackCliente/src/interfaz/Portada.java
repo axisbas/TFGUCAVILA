@@ -6,7 +6,6 @@
 /*
  * Portada.java
  *
- * Created on 25-ago-2010, 19:03:57
  */
 package interfaz;
 
@@ -35,6 +34,7 @@ public class Portada extends javax.swing.JDialog {
     private Portada(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        this.setBackground(new java.awt.Color(126, 44, 56));
     }
 
 
@@ -84,18 +84,19 @@ public class Portada extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(126, 44, 56));
+        setPreferredSize(new java.awt.Dimension(450, 550));
 
-        login.setFont(new java.awt.Font("Lucida Grande", 0, 18));
+        login.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         login.setText("Login");
 
-        password.setFont(new java.awt.Font("Lucida Grande", 0, 18));
+        password.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         password.setText("Contraseña");
 
-        contrasena.setFont(new java.awt.Font("Lucida Grande", 0, 16));
+        contrasena.setFont(new java.awt.Font("Lucida Grande", 0, 16)); // NOI18N
         contrasena.setText("password1");
 
         nombre.setText("usuario1");
-        nombre.setFont(new java.awt.Font("Lucida Grande", 0, 16));
+        nombre.setFont(new java.awt.Font("Lucida Grande", 0, 16)); // NOI18N
         nombre.setPreferredSize(new java.awt.Dimension(134, 28));
         nombre.setSelectionEnd(9);
         nombre.setSelectionStart(9);
@@ -105,7 +106,7 @@ public class Portada extends javax.swing.JDialog {
             }
         });
 
-        conectar.setFont(new java.awt.Font("Lucida Grande", 0, 16));
+        conectar.setFont(new java.awt.Font("Lucida Grande", 0, 16)); // NOI18N
         conectar.setText("Conectar");
         conectar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +114,7 @@ public class Portada extends javax.swing.JDialog {
             }
         });
 
-        registrarse.setFont(new java.awt.Font("Lucida Grande", 0, 16));
+        registrarse.setFont(new java.awt.Font("Lucida Grande", 0, 16)); // NOI18N
         registrarse.setText("Registrarse");
         registrarse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,10 +154,9 @@ public class Portada extends javax.swing.JDialog {
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(layout.createSequentialGroup()
                         .add(90, 90, 90)
-                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                            .add(org.jdesktop.layout.GroupLayout.LEADING, registrarse, 0, 0, Short.MAX_VALUE)
-                            .add(org.jdesktop.layout.GroupLayout.LEADING, conectar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .add(92, 92, 92))
+                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                            .add(conectar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(registrarse, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)))
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(password, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 109, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -164,8 +164,8 @@ public class Portada extends javax.swing.JDialog {
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 72, Short.MAX_VALUE)
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                             .add(nombre, 0, 0, Short.MAX_VALUE)
-                            .add(contrasena))
-                        .addContainerGap())))
+                            .add(contrasena))))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)

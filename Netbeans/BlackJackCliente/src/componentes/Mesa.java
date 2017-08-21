@@ -6,7 +6,6 @@
 /*
  * Mesa.java
  *
- * Created on 23-ago-2010, 17:22:29
  */
 
 package componentes;

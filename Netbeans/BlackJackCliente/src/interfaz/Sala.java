@@ -6,7 +6,6 @@
 /*
  * Sala.java
  *
- * Created on 26-ago-2010, 17:36:47
  */
 package interfaz;
 

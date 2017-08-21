@@ -6,7 +6,6 @@
 /*
  * Cliente.java
  *
- * Created on 12-jul-2010, 18:05:04
  */
 
 package blackjackcliente;

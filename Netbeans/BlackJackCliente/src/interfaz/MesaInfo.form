@@ -81,9 +81,6 @@
                 <LineBorder/>
               </Border>
             </Property>
-            <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-              <Insets value="[2, 2, 2, 2]"/>
-            </Property>
           </Properties>
         </Component>
       </SubComponents>

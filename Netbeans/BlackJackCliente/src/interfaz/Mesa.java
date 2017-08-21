@@ -6,7 +6,6 @@
 /*
  * Mesa.java
  *
- * Created on 30-ago-2010, 18:50:45
  */
 package interfaz;
 
@@ -61,6 +60,8 @@ public class Mesa extends javax.swing.JDialog {
         mensajes = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(800, 700));
+        setPreferredSize(new java.awt.Dimension(800, 700));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosed(java.awt.event.WindowEvent evt) {
                 formWindowClosed(evt);

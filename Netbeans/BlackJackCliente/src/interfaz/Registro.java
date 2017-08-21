@@ -6,7 +6,6 @@
 /*
  * Registro.java
  *
- * Created on 25-ago-2010, 19:05:49
  */
 package interfaz;
 
