@@ -53,11 +53,19 @@ public class Asiento extends javax.swing.JPanel {
     }
     public void anadeCarta(Carta c){
         anadeCarta(c.getNumero(),c.getPalo());
+                this.repaint();
+        this.validate();
+                panelMano.validate();
+        panelMano.repaint();
     }
     public void anadeCartas(ArrayList<Carta> cartas){
         for (Carta c: cartas){
             this.anadeCarta(c);
         }
+        this.repaint();
+        this.validate();
+                panelMano.repaint();
+        panelMano.validate();
     }
 
     public void vaciarMano() {

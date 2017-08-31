@@ -67,10 +67,6 @@ public class Registro extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(126, 44, 56));
 
-        email.setSize(new java.awt.Dimension(14, 28));
-
-        username.setSize(new java.awt.Dimension(14, 28));
-
         jLabel4.setText("Repetir Contraseña");
 
         jLabel1.setText("Nombre");
@@ -81,8 +77,6 @@ public class Registro extends javax.swing.JDialog {
                 registrarActionPerformed(evt);
             }
         });
-
-        repassword.setSize(new java.awt.Dimension(14, 28));
 
         jLabel3.setText("Contraseña");
 
@@ -122,7 +116,7 @@ public class Registro extends javax.swing.JDialog {
                     .add(layout.createSequentialGroup()
                         .add(29, 29, 29)
                         .add(cancelar)))
-                .addContainerGap())
+                .addContainerGap(226, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -143,7 +137,7 @@ public class Registro extends javax.swing.JDialog {
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(repassword, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(jLabel4))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 27, Short.MAX_VALUE)
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(registrar)
                     .add(cancelar))

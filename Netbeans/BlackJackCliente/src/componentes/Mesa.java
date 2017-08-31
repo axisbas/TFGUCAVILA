@@ -61,18 +61,32 @@ public class Mesa extends javax.swing.JPanel {
 
     public void setCarta(String nombre, int numero, String palo){
         this.getIndice(nombre).anadeCarta(numero, palo);
+        this.repaint();
+        this.validate();
+                for(int i=0;i<4;i++){
+            asientos.get(i).repaint();
+            asientos.get(i).validate();
+        }
     }
 
     public void mostrarCartas(){
         for (Asiento a : asientos){
             a.mostrarCartas();
+            a.repaint();
+            a.validate();
+            this.repaint();
+            this.validate();
         }
     }
 
     public void vaciarManos(){
         for (Asiento a : asientos){
             a.vaciarMano();
+            a.repaint();
+            a.validate();
         }
+        this.repaint();
+        this.validate();
     }
 
     public void inicializarMesa(InfoMesa infomesa){
@@ -82,11 +96,15 @@ public class Mesa extends javax.swing.JPanel {
         for (int i=0; i<nombres.size();i++){
             this.asientos.get(i).setNombre(nombres.get(i));
             this.asientos.get(i).anadeCartas(infomesa.getCartas(nombres.get(i)));
+            this.asientos.get(i).repaint();
+            this.asientos.get(i).validate();
         }
         for (int j=nombres.size(); j<asientos.size();j++){
             this.asientos.get(j).desocuparAsiento();
         }
         this.vaciarManos();
+        this.repaint();
+        this.validate();
     }
 
 
